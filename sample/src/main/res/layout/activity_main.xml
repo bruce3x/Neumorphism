@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bruce3x.neumorphism.NeumorphismLayout
+        android:id="@+id/layNeu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/material_color">
+
+        <View
+            android:id="@+id/vSquare"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_round_rect"
+            app:layout_neu_blur="20dp"
+            app:layout_neu_distance="10dp"
+            app:layout_neu_intensity="0.15" />
+
+    </com.bruce3x.neumorphism.NeumorphismLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Size" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/sbSize"
+            style="@style/SeekBar"
+            app:bsb_max="200"
+            app:bsb_min="50"
+            app:bsb_progress="100" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Radius" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/sbRadius"
+            style="@style/SeekBar"
+            app:bsb_max="100"
+            app:bsb_min="0"
+            app:bsb_progress="16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Distance" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/sbDistance"
+            style="@style/SeekBar"
+            app:bsb_max="50"
+            app:bsb_min="5"
+            app:bsb_progress="20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Intensity x 10" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/sbIntensity"
+            style="@style/SeekBar"
+            app:bsb_max="6.0"
+            app:bsb_min="0.1"
+            app:bsb_progress="1.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Blur" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/sbBlur"
+            style="@style/SeekBar"
+            app:bsb_max="100"
+            app:bsb_min="0"
+            app:bsb_progress="60" />
+
+    </LinearLayout>
+
+</LinearLayout>

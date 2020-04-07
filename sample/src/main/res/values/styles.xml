@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="SeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="bsb_bubble_color">#f7565f</item>
+        <item name="bsb_bubble_text_color">#ffffff</item>
+        <item name="bsb_show_progress_in_float">true</item>
+        <item name="bsb_track_color">#f8a7a9</item>
+        <item name="bsb_second_track_color">#f7565f</item>
+    </style>
+
+</resources>
